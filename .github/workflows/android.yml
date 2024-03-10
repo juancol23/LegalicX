@@ -1,0 +1,29 @@
+name: Android Build LegalicX Relase
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Configurar JDK
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: '11'
+
+    - name: Contruir con Gradle
+      run: /bin/bash -e ./gradlew build
+
+    - name: Archivo APK
+      uses: actions/upload-artifact@v2
+      with:
+        name: app-release
+        path: app/build/outputs/apk/release/

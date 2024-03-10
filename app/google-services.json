@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "707263102212",
+    "project_id": "legalicx",
+    "storage_bucket": "legalicx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707263102212:android:ee692f64e3d66c051c2451",
+        "android_client_info": {
+          "package_name": "com.lawtecnology.legalicx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd5AhNjkBwknnXQ6_DXN8inthmR-LVnKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

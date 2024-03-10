@@ -28,6 +28,7 @@ public class DecisionActivity extends AppCompatActivity {
 
     private SharedPreferences prefs_pais = null;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

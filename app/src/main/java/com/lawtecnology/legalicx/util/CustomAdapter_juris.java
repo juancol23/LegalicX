@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.valdemar.emprendedores.R;
-
 public class CustomAdapter_juris extends BaseAdapter {
     Context context;
     String[] especialidad;

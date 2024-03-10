@@ -8,7 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.valdemar.emprendedores.R;
+import com.lawtecnology.legalicx.R;
+
 
 public class CustomAdapter extends BaseAdapter {
     Context context;

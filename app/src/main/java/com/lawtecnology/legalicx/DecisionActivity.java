@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 import com.google.firebase.messaging.FirebaseMessaging;
+import com.lawtecnology.legalicx.tabs.LoginLegalicActivity;
+import com.lawtecnology.legalicx.tabs.TabsDashboardAsesoriaActivity;
 import com.lawtecnology.legalicx.util.Constants;
 import com.lawtecnology.legalicx.util.CustomAdapter;
 
@@ -44,7 +46,7 @@ public class DecisionActivity extends AppCompatActivity {
             public void onClick(View view) {
                 prefs_decision.edit().putBoolean("prefs_decision", false).commit();
                 prefs_tipo_usuario.edit().putString("prefs_tipo_usuario", "general").commit();
-               // startActivity(new Intent(DecisionActivity.this, TabsDashboardAsesoriaActivity.class));
+               startActivity(new Intent(DecisionActivity.this, TabsDashboardAsesoriaActivity.class));
             }
         });
 
@@ -54,7 +56,7 @@ public class DecisionActivity extends AppCompatActivity {
                 Constants.DECISION = true;
                 prefs_decision.edit().putBoolean("prefs_decision", true).commit();
                 //    prefs_tipo_usuario.edit().putString("prefs_tipo_usuario", "abogado").commit();
-               // startActivity(new Intent(DecisionActivity.this,LoginLegalicActivity.class));
+               startActivity(new Intent(DecisionActivity.this, LoginLegalicActivity.class));
             }
         });
         initSpiiner();

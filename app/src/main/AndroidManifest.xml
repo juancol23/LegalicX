@@ -18,6 +18,9 @@
         android:theme="@style/Theme.Legalicx"
         tools:targetApi="31">
         <activity
+            android:name=".tabs.LoginLegalicActivity"
+            android:exported="false" />
+        <activity
             android:name=".tabs.TabsDashboardAsesoriaActivity"
             android:exported="false" />
         <activity
